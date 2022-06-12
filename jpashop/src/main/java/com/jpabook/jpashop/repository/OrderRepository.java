@@ -21,5 +21,20 @@ public class OrderRepository {
         return em.find(Order.class, id);
     }
 
-    //public List<Order> findAll(OrderSearch orderSearch){}
+    /**
+     * Querydsl로 처리
+     */
+//    public List<Order> findAll(OrderSearch orderSearch){
+//        QOrder order = Qorder.order;
+//        QMember member = QMember.meber;
+//
+//        return query
+//                .select(order)
+//                .
+//        String jpql = "select o from Order o join o.member m";
+//
+//        return em.createQuery(jpql, Order.class)
+//                .setMaxResults(1000)    //최대 1000건
+//                .getResultList();
+//    }
 }
